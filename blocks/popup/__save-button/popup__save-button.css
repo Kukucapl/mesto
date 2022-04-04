@@ -25,10 +25,11 @@
     margin: 45px auto calc(37px - ((454px - 100vw) / 12));
     font-size: calc(18px - ((454px - 100vw) / 30));
   }
-
+}
 @media screen and (max-width: 334px) {
   .popup__save-button {
     margin-bottom: 25px;
     font-size: 14px;
     line-height: 17px;
   }
+}  
