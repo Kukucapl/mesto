@@ -10,7 +10,7 @@
 <body>
   <div class="page">
     <header class="header">
-      <img class="header__logo" src="./images/logo.svg" alt="Лого">
+      <div class="header__logo"></div>
     </header>
 
     <main>
@@ -20,57 +20,57 @@
         <div class="profile__info">
           <h1 class="profile__user-name">Жак-Ив Кусто</h1>
           <p class="profile__user-job">Исследователь океана</p>
-          <button class="profile__edit-button" type="button"></button>
+          <button class="profile__edit-button" type="button" aria-label="Редактировать"></button>
         </div>
-        <button class="profile__add-button" type="button"></button>
+        <button class="profile__add-button" type="button" aria-label="Добавить"></button>
       </section>
 
       <section class="elements">
-          <div class="element">
-            <img class="element__image" src="./images/Cherepovets.jpg" alt="Череповец">
+          <article class="element">
+            <img class="element__image" src="./images/Cherepovets.jpg" alt="Деревянный домик с собакой на крыше">
             <h2 class="element__title">Череповец</h2>
-            <button class="element__like-button"></button>
-          </div>
-          <div class="element">
-            <img class="element__image" src="./images/Chelyabinsk.jpg" alt="Челябинск">
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
+          </article>
+          <article class="element">
+            <img class="element__image" src="./images/Chelyabinsk.jpg" alt="Спасатели пожарной службы борятся с природным пожаром">
             <h2 class="element__title">Челябинск</h2>
-            <button class="element__like-button"></button>
-          </div>
-          <div class="element">
-            <img class="element__image" src="./images/Kazan.jpg" alt="Казань">
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
+          </article>
+          <article class="element">
+            <img class="element__image" src="./images/Kazan.jpg" alt="Кабина самолета ТУ-124, торчащая из здания авиационного института">
             <h2 class="element__title">Казань</h2>
-            <button class="element__like-button"></button>
-          </div>
-          <div class="element">
-            <img class="element__image" src="./images/Moskva.jpg" alt="Москва">
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
+          </article>
+          <article class="element">
+            <img class="element__image" src="./images/Moskva.jpg" alt="Силовики готовятся задерживать и колотить людей, слишком громко желающих правды, свободы и мира">
             <h2 class="element__title">Москва</h2>
-            <button class="element__like-button"></button>
-          </div>
-          <div class="element">
-            <img class="element__image" src="./images/Norilsk.jpg" alt="Норильск">
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
+          </article>
+          <article class="element">
+            <img class="element__image" src="./images/Norilsk.jpg" alt="Заброшеный дом">
             <h2 class="element__title">Норильск</h2>
-            <button class="element__like-button"></button>
-          </div>
-          <div class="element">
-            <img class="element__image" src="./images/Volzhski.jpg" alt="Волжский">
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
+          </article>
+          <article class="element">
+            <img class="element__image" src="./images/Volzhski.jpg" alt="Вид из мокрого от дождя окна - мужчина прилег отдохнуть под деревом после крепких напитков">
             <h2 class="element__title">Волжский</h2>
-            <button class="element__like-button"></button>
-          </div>
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
+          </article>
       </section>
 
     </main>
 
     <footer class="footer">
-      <p class="footer__copyright">© 2022 Mesto Russia</p>
+      <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
 
     <div class="popup">
-        <form class="popup__container">
-          <button class="popup__close-button" type="button"></button>
+        <form class="popup__container" name="user-info" method="post" autocomplete="off">
+          <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
           <h2 class="popup__title">Редактировать профиль</h2>
-          <input class="popup__input" type="text">
-          <input class="popup__input" type="text">
-          <button class="popup__save-button" type="submit">Сохранить</button>
+          <input class="popup__input" name="user-name" type="text" id="user-name" placeholder="Имя">
+          <input class="popup__input" name="user-job" type="text" id="user-job" placeholder="О себе">
+          <button class="popup__save-button" type="submit" aria-label="Сохранить">Сохранить</button>
         </form>
     </div>
 
