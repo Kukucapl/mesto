@@ -1,4 +1,4 @@
-.popup__save-button {
+.form__save-button {
   width: 358px;
   min-height: 50px;
   font-size: 18px;
@@ -13,12 +13,12 @@
   transition: opacity 0.3s;
 }
 
-.popup__save-button:hover {
+.form__save-button:hover {
   opacity: 80%;
 }
 
 @media screen and (max-width: 454px) {
-  .popup__save-button {
+  .form__save-button {
     min-width: 238px;
     min-height: 46px;
     width: calc(358px - (454px - 100vw));
@@ -27,7 +27,7 @@
   }
 }
 @media screen and (max-width: 334px) {
-  .popup__save-button {
+  .form__save-button {
     margin-bottom: 25px;
     font-size: 14px;
     line-height: 17px;

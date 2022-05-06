@@ -1,4 +1,4 @@
-.popup__close-button {
+.form__close-button {
   width: 32px;
   height: 32px;
   position: absolute;
@@ -11,24 +11,24 @@
   object-fit: contain;  
 }
 
-.popup__close-button:hover {
+.form__close-button:hover {
   opacity: 60%;
 }
 
 @media screen and (max-width: 548px) {
-  .popup__close-button {
+  .form__close-button {
     right: calc(-40px + (548px - 100vw));
   }
 }
 
 @media screen and (max-width: 508px) {
-  .popup__close-button {
+  .form__close-button {
     right: 0px;
   }
 }
 
 @media screen and (max-width: 468px) {
-  .popup__close-button {
+  .form__close-button {
     width: calc(32px - (468px - 100vw));
     height: calc(32px - (468px - 100vw));
     background-size: calc(32px - (468px - 100vw));
@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 456px) {
-  .popup__close-button {
+  .form__close-button {
     width: 20px;
     height: 20px;
     background-size: 20px;
