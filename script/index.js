@@ -54,10 +54,12 @@ const initialCards = [
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
+  document.addEventListener('keydown', closeByEscape);
 }
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
+  document.removeEventListener('keydown', closeByEscape);
 }
 
 function clearError(form) {
@@ -131,16 +133,15 @@ initialCards.forEach( function(item) {
 
 popupFigure.querySelector('.figure__close-button').addEventListener('click', () => closePopup(popupFigure));
 
-
 popups.forEach(function(popup) {
  popup.addEventListener('click', function(evt) {
    closePopup(evt.target)
  });
 });
 
-document.addEventListener('keydown', function(evt) {
-  const popupOn = document.querySelector('.popup_opened');
-if (evt.key === 'Escape' && popupOn !== null) {
-  closePopup(popupOn)
+function closeByEscape (evt) {
+  if (evt.key === 'Escape') {
+    const openedPopup = document.querySelector('.popup_opened');
+    closePopup(openedPopup);
+  }
 }
-});
