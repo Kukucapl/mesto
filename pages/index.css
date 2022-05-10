@@ -41,3 +41,8 @@
 @import url(../blocks/figure/__close-button/figure__close-button.css);
 @import url(../blocks/figure/__image/figure__image.css);
 @import url(../blocks/figure/__caption/figure__caption.css);
+
+@import url(../blocks/form/__input/_error/form__input_error.css);
+@import url(../blocks/form/__input-error/form__input-error.css);
+@import url(../blocks/form/__input-error/_active/form__input-error_active.css);
+@import url(../blocks/form/__save-button/_disabled/form__save-button_disabled.css);
